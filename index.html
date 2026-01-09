@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Full Page Canvas</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <canvas id="canvas"></canvas>
+  <div id="config">
+    <div class="config_trigger noselect">𝓲</div>
+    <form class="config_content">
+      <label class="config_line">
+        <span>Latitude:</span>
+        <input type="range" name="lat" min="15" max="60" step="5" value="10" oninput="this.nextElementSibling.value = this.value"/>
+        <output>--</output>
+      </label>
+      <label class="config_line">
+        <span>Scale Noise:</span> 
+        <input type="checkbox" name="scaleNoise" />
+      </label>
+      <label class="config_line">
+        <span>Stroke:</span>
+        <input type="checkbox" name="stroke" />
+      </label>
+      <button type="button" id="config_apply">Apply</button>
+    </form>
+  </div>
+
+</body>
+</html>
