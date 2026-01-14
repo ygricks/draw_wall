@@ -23,10 +23,11 @@ canvas {
   padding: 10px;
   border-radius: 5px;
   font-family: Arial, sans-serif;
+  font-size: 12px;
 }
 
 #config.config_opened {
-  width: 300px;
+  width: calc(100% - 40px);
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -92,5 +93,9 @@ canvas {
 }
 #config .config_line span {
   display: inline-block;
-  width: 100px;
+  width: 70px;
+}
+
+#config .config_line input[type="range"] {
+  flex-grow: 1;
 }
